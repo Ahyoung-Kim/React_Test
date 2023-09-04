@@ -12,7 +12,7 @@ const planes = [
   },
   {
     id: "plane-2",
-    height: "58px",
+    height: "50px",
     // top: "320px",
     top: "20%",
     duration: "60s",
@@ -60,7 +60,7 @@ const planes = [
   },
   {
     id: "plane-8",
-    height: "67px",
+    height: "57px",
     // top: "401px",
     top: "80%",
     duration: "40s",
@@ -89,11 +89,7 @@ const PlanePage = () => {
     <Container>
       {planes.map((plane) => (
         <Plane key={plane.id} height={plane.height} top={plane.top}>
-          <PlaneImage
-            duration={plane.duration}
-            delay={plane.delay}
-            src={`${process.env.PUBLIC_URL}/img/plane.png`}
-          />
+          <PlaneImage duration={plane.duration} delay={plane.delay} />
         </Plane>
       ))}
     </Container>
@@ -124,7 +120,7 @@ const Container = styled.div`
 const motion = keyframes`
 0% {
     opacity: 0;
-    transfrom: translateX(0);
+    transfrom: translateX(-100vw);
 }
 
 5% {
