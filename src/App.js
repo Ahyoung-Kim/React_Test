@@ -9,6 +9,8 @@ import GsapPage from "./page/GsapPage";
 import CloudPage from "./page/CloudPage";
 import IntersectionObserverPage from "./page/IntersectionObserverPage";
 import ScrollPage from "./page/ScrollPage";
+import ScrollPage2 from "./page/ScrollPage2";
+import CarouselPage from "./page/CarouselPage";
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
           <Route path="cloud" element={<CloudPage />} />
           <Route path="observer" element={<IntersectionObserverPage />} />
           <Route path="scroll" element={<ScrollPage />} />
+
+          <Route path="scroll2" element={<ScrollPage2 />} />
+          <Route path="carousel" element={<CarouselPage />} />
         </Routes>
       </MainLayout>
     </>
